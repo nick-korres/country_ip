@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  mssqlserver:
+    container_name: mssqlserver-countryip
+    image: mssql-countryip
+    ports:
+      - "1433:1433"
+    environment:
+      MSSQL_SA_PASSWORD: R5gU85VTxQt6txN6
+      ACCEPT_EULA: "Y"
+    volumes:
+       - mssqlserver:/data/postgres
+volumes:
+    mssqlserver:    
+    
