@@ -11,7 +11,7 @@ The two endpoints are :
         that responds with the available ips per country given an array of country codes.
 
 The api also uses in-memmory cache to save responses for some time to speed up the requests 
-and updates the info in the database by using an external source.
+and updates the info in the database by using an external source every one hour.
 
 ## Executing program
 
